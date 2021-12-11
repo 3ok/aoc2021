@@ -35,7 +35,6 @@ def update_grid(grid: Grid) -> int:
                 if grid[i_adj][j_adj] > 9 and (i_adj, j_adj) not in flashed:
                     # This adjacent octopus flashes for the first time this step
                     flashes.add((i_adj, j_adj))
-                    flashed.add((i_adj, j_adj))
 
     # Any octopus that flashed during this step  has its energy level set to 0
     for i, j in flashed:
